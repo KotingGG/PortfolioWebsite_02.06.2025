@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лесной Дар</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        body {
+            background-color: #fefae0;
+            color: #444e41;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .hero {
+            background: linear-gradient(135deg, rgba(204, 213, 174, 0.8), rgba(88, 129, 87, 0.8));
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://avatars.mds.yandex.net/i?id=b4bfce56c410122c202bbda524f1d993_l-5342624-images-thumbs&n=13') center/cover;
+            opacity: 0.5;
+            z-index: -1;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 2;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 30px;
+            position: relative;
+            z-index: 2;
+        }
+        .btn {
+            display: inline-block;
+            padding: 15px 40px;
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            position: relative;
+            z-index: 3;
+        }
+        .btn:hover {
+            background: white;
+            color: #283618;
+        }
+        .features {
+            padding: 80px 0;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .feature-card {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            width: 300px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .centre {
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            margin: 40px auto;
+            max-width: 1000px;
+        }
+        .centre h2 {
+            margin-bottom: 20px;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <header class='hero' aria-label="Натуральная косметика из лесных даров">
+        <div class='container'>
+            <h1>Натуральная косметика для вашей кожи</h1>
+            <p>Создано из природных ингредиентов без химии. Заботимся о вас и планете</p>
+            <a href="https://youtu.be/dQw4w9WgXcQ?si=7Jk3XXtue7P64M5p" class="btn">Заказать</a>
+        </div>
+    </header>
+    
+    <section class='features'>
+        <div class='feature-card'>
+            <h3>100% натуральное</h3>
+            <p>Только органические масла, травы и воски.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Эко-упаковка</h3>
+            <p>Без пластика — только перерабатываемые материалы.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Ручная работа</h3>
+            <p>Каждый продукт создан с любовью.</p>
+        </div>
+    </section>
+    
+    <div class='centre'>
+        <h2>Почему выбирают Лесной Дар?</h2>
+        <p>Наша косметика — это гармония природы и науки. Мы сотрудничаем с эко-фермерами и используем технологии, которые сохраняют полезные свойства растений.</p>
+    </div>
+    
+    <footer>
+        <p>© 2025 Лесной Дар</p>
+    </footer>
+</body>
+</html>
